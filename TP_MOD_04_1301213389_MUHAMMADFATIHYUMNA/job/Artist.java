@@ -33,10 +33,6 @@ public class Artist {
     }
 
     public int getUsia() {
-        // Implementasi perhitungan usia di sini
-        // Anda dapat menggunakan kelas java.util.Date atau java.time.LocalDate
-        // sebagai referensi untuk menghitung usia dari tanggal lahir.
-        // Saya akan memberikan contoh sederhana dengan menggunakan LocalDate:
         LocalDate birthdate = LocalDate.parse(this.birthdate, DateTimeFormatter.ofPattern("d MMMM yyyy"));
         LocalDate currentDate = LocalDate.now();
         return Period.between(birthdate, currentDate).getYears();
