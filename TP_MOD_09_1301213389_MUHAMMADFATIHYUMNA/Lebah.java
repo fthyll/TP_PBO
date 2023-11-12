@@ -8,7 +8,7 @@ public class Lebah extends Serangga {
     public void gerak(Koordinat k) {
         getPosisi().setX(getPosisi().getX() + k.getX());
         getPosisi().setY(getPosisi().getY() + k.getY());
-        ((Koordinat3D) getPosisi()).setZ(((Koordinat3D) getPosisi()).getZ() + k.getZ());
+        ((Koordinat3D) getPosisi()).setZ(((Koordinat3D) getPosisi()).getZ() + k.getZ());    
     }
 
     public void info() {
